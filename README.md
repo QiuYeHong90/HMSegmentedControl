@@ -23,7 +23,7 @@ A drop-in replacement for UISegmentedControl mimicking the style of the segmente
 The easiest way of installing HMSegmentedControl is via [CocoaPods](http://cocoapods.org/). 
 
 ```
-pod 'HMSegmentedControl'
+pod 'HMSegmentedControl',:git =>'git@github.com:QiuYeHong90/HMSegmentedControl.git'
 ```
 
 ### Old-fashioned way
