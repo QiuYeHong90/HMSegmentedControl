@@ -307,8 +307,8 @@
                 fullRect = CGRectMake(self.segmentWidth * idx, 0, self.segmentWidth, oldRect.size.height);
             } else {
                 // When we are drawing dynamic widths, we need to loop the widths array to calculate the xOffset
-                //  There is a margin on the right side of the picture so that it can be dynamically set.
-                CGFloat xOffset = self.segmentEdgeInset.left;
+               
+                CGFloat xOffset = 0;
                 NSInteger i = 0;
                 for (NSNumber *width in self.segmentWidthsArray) {
                     if (idx == i)
@@ -425,6 +425,7 @@
                 }
             } else if (self.segmentWidthStyle == HMSegmentedControlSegmentWidthStyleDynamic) {
                 // When we are drawing dynamic widths, we need to loop the widths array to calculate the xOffset
+                 //  There is a margin on the right side of the picture so that it can be dynamically set.
                 CGFloat xOffset = self.segmentEdgeInset.left;
                 NSInteger i = 0;
                 
